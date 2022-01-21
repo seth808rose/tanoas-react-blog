@@ -1,0 +1,8 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9rem;
+  color: black;
+  font-size: 7rem;
+}

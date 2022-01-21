@@ -1,0 +1,22 @@
+// unused function. This function below is a unsuccessful fixed navbar code that I was not able to get working until I take some more time to look at it.
+
+ // creating the useState Hook for the scroll navbar function
+
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  const handleScroll = helpers(() => {
+    const currentScrollPos = window.pageYOffset;
+    setVisible(
+      (prevScrollPos > currentScrollPos &&
+        prevScrollPos - currentScrollPos > 70) ||
+        currentScrollPos < 10
+    );
+
+    setPrevScrollPos(currentScrollPos);
+  }, 100);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [prevScrollPos, visible, handleScroll]);

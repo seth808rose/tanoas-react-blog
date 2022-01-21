@@ -1,0 +1,17 @@
+@media screen and (min-width: 1115px) {
+  .posts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 20px;
+    /* margin-right: 40px; */
+    padding-right: 40px;
+
+    /* Another way to have the images boxes wrap and fill the whole line */
+
+    /* display: flex;
+    flex-wrap: wrap;
+    margin-right: 2rem; */
+  }
+}

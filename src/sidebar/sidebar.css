@@ -1,0 +1,130 @@
+.sb {
+  width: 26rem;
+  height: 45rem;
+  margin: 10px auto;
+  padding-bottom: 30px;
+  background: hsla(180, 12%, 97%, 0.438);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 5.5rem;
+}
+
+/* sidebar image */
+
+.sbImg {
+  width: 260px;
+  height: 260px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+    url(../assets/sidebar-img.jpeg) center/cover no-repeat;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+/* ======================================= */
+
+.sbItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+}
+
+.sbTitle {
+  margin: 1rem;
+  width: 16rem;
+  text-align: center;
+  border-top: 2px solid rgba(218, 190, 32, 0.705);
+  border-bottom: 2px solid rgba(218, 190, 32, 0.705);
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  line-height: 30px;
+  font-size: 15px;
+}
+
+.sbItem > p {
+  line-height: 1;
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 1px;
+}
+
+.sbList {
+  list-style: none;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.7rem;
+  text-align: center;
+  width: 270px;
+}
+
+.sbListItem {
+  display: inline-block;
+  width: 50%;
+  margin-top: 3px;
+  font-family: "Luckiest Guy", cursive;
+  margin-left: 0;
+}
+
+.sbSocial {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  width: 10rem;
+  border-bottom: 3px solid #000;
+  padding-bottom: 1rem;
+}
+
+.sbIcons {
+  margin: 5px;
+  font-size: 17px;
+  color: rgba(226, 43, 119, 0.712);
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+/* =====================Larger screen 
+======================================
+*/
+
+@media screen and (min-width: 775px) {
+  .sb {
+    width: 20rem;
+    height: 50rem;
+    margin-left: 0.5rem;
+    align-items: center;
+  }
+  .sbImg {
+    width: 300px;
+    height: 300px;
+  }
+
+  .sbItem > p {
+    width: 270px;
+  }
+
+  .sbTitle {
+    width: 16rem;
+    font-size: 20px;
+  }
+
+  .sbSocial {
+    border: none;
+  }
+
+  .sbIcons:hover {
+    color: gray;
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sb {
+    align-items: center;
+    margin-left: 4rem;
+  }
+}
